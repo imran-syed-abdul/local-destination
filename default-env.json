@@ -1,0 +1,83 @@
+{
+    "VCAP_SERVICES": {
+        "html5-apps-repo": [{
+            "name": "helloworld1-html5-srv",
+            "instance_name": "helloworld1-html5-srv",
+            "label": "html5-apps-repo",
+            "tags": ["html5appsrepo", "html5-apps-repo-rt", "html5-apps-rt", "html5-apps-repo-dt", "html5-apps-dt", "endpoint:https://api.cf.eu10.hana.ondemand.com", "org:440e1dcetrial", "space:Learning-2"],
+            "plan": "app-host",
+            "credentials": {
+                "app_host_id": "4dcc6b98-c175-4493-a28e-bc7ac7f46989",
+                "content_endpoint": "https://html5-apps-repo-dt.cfapps.eu10.hana.ondemand.com",
+                "saasregistryenabled": true,
+                "sap.cloud.service": "html5-apps-repo-dt",
+                "service_key_name": "key",
+                "uaa": {
+                    "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+                    "clientid": "sb-4dcc6b98-c175-4493-a28e-bc7ac7f46989!b98877|html5-apps-repo-uaa!b1685",
+                    "clientsecret": "fbf661c1-fb3a-437e-adf4-85ac5a1a4074$Vm9YIPOgzVzT0xc0aHmYR0BnhSXWbcS09KQ4TyUwyVA=",
+                    "credential-type": "binding-secret",
+                    "identityzone": "440e1dcetrial",
+                    "identityzoneid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                    "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+                    "subaccountid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                    "tenantid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.eu10.hana.ondemand.com",
+                    "url": "https://440e1dcetrial.authentication.eu10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAslPAtLmydSrSMPeH11CVmP6s/5LF1dWkKD4D6I3bZWuVVMLkMQNRQVPwFVClS5LY2w4nhaOO4GfJ0cZoKq3tRXUlmpvq5qyXnlMFLB0NNAkvROlmKpcwTQUOdpK9JStWqfnPf18sicImx+8a2UJ/nGtt+IvUbobBQRPQfXVwVLBDVhNrXMI7KQWeHYVSuEAUYzExNMKYyosa0JPHM4digSfNLdDTk6XHKAuC4m6QcpzaFyj3AIcU4dEahk/CH/P2zPXCFruOernDpr9xyOUrBPw7IjhGJ48XPXeakb9FcHJaBGd/1FvQGT5xTCKMdauSDVM5HqEdTTHp/24oMBCRjQIDAQAB-----END PUBLIC KEY-----",
+                    "xsappname": "4dcc6b98-c175-4493-a28e-bc7ac7f46989!b98877|html5-apps-repo-uaa!b1685",
+                    "zoneid": "a77cf55b-c1de-4bac-8870-a1da6f064562"
+                },
+                "uri": "https://html5-apps-repo-dt.cfapps.eu10.hana.ondemand.com",
+                "vendor": "SAP"
+            }
+        }],
+        "destination": [{
+            "name": "helloworld1-dest-srv",
+            "instance_name": "helloworld1-dest-srv",
+            "label": "destination",
+            "tags": ["destination", "conn", "connsvc", "endpoint:https://api.cf.eu10.hana.ondemand.com", "org:440e1dcetrial", "space:Learning-2"],
+            "plan": "lite",
+            "credentials": {
+                "clientid": "sb-clone20a99dd91df0483eb69075d7d21a6e07!b98877|destination-xsappname!b404",
+                "clientsecret": "527f7fce-7397-4274-8c8a-8bf9c765fb77$nnMLg-wj9Mc8k9fqXCzQZt9DKqCFsknGfPFCwhzaqLM=",
+                "identityzone": "440e1dcetrial",
+                "instanceid": "20a99dd9-1df0-483e-b690-75d7d21a6e07",
+                "service_key_name": "key",
+                "tenantid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                "tenantmode": "dedicated",
+                "uaadomain": "authentication.eu10.hana.ondemand.com",
+                "uri": "https://destination-configuration.cfapps.eu10.hana.ondemand.com",
+                "url": "https://440e1dcetrial.authentication.eu10.hana.ondemand.com",
+                "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAslPAtLmydSrSMPeH11CVmP6s/5LF1dWkKD4D6I3bZWuVVMLkMQNRQVPwFVClS5LY2w4nhaOO4GfJ0cZoKq3tRXUlmpvq5qyXnlMFLB0NNAkvROlmKpcwTQUOdpK9JStWqfnPf18sicImx+8a2UJ/nGtt+IvUbobBQRPQfXVwVLBDVhNrXMI7KQWeHYVSuEAUYzExNMKYyosa0JPHM4digSfNLdDTk6XHKAuC4m6QcpzaFyj3AIcU4dEahk/CH/P2zPXCFruOernDpr9xyOUrBPw7IjhGJ48XPXeakb9FcHJaBGd/1FvQGT5xTCKMdauSDVM5HqEdTTHp/24oMBCRjQIDAQAB-----END PUBLIC KEY-----",
+                "xsappname": "clone20a99dd91df0483eb69075d7d21a6e07!b98877|destination-xsappname!b404"
+            }
+        }],
+        "xsuaa": [{
+            "name": "helloworld1-xsuaa-srv",
+            "instance_name": "helloworld1-xsuaa-srv",
+            "label": "xsuaa",
+            "tags": ["xsuaa", "endpoint:https://api.cf.eu10.hana.ondemand.com", "org:440e1dcetrial", "space:Learning-2"],
+            "plan": "application",
+            "credentials": {
+                "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+                "clientid": "sb-helloworld1!t98877",
+                "clientsecret": "5FcCrgsGP62Npqcjw6MzMjJoqZI=",
+                "credential-type": "instance-secret",
+                "identityzone": "440e1dcetrial",
+                "identityzoneid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+                "service_key_name": "key",
+                "subaccountid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                "tenantid": "a77cf55b-c1de-4bac-8870-a1da6f064562",
+                "tenantmode": "dedicated",
+                "uaadomain": "authentication.eu10.hana.ondemand.com",
+                "url": "https://440e1dcetrial.authentication.eu10.hana.ondemand.com",
+                "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAslPAtLmydSrSMPeH11CVmP6s/5LF1dWkKD4D6I3bZWuVVMLkMQNRQVPwFVClS5LY2w4nhaOO4GfJ0cZoKq3tRXUlmpvq5qyXnlMFLB0NNAkvROlmKpcwTQUOdpK9JStWqfnPf18sicImx+8a2UJ/nGtt+IvUbobBQRPQfXVwVLBDVhNrXMI7KQWeHYVSuEAUYzExNMKYyosa0JPHM4digSfNLdDTk6XHKAuC4m6QcpzaFyj3AIcU4dEahk/CH/P2zPXCFruOernDpr9xyOUrBPw7IjhGJ48XPXeakb9FcHJaBGd/1FvQGT5xTCKMdauSDVM5HqEdTTHp/24oMBCRjQIDAQAB-----END PUBLIC KEY-----",
+                "xsappname": "helloworld1!t98877",
+                "zoneid": "a77cf55b-c1de-4bac-8870-a1da6f064562"
+            }
+        }]
+    }
+}

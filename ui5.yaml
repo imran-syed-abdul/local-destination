@@ -1,0 +1,23 @@
+specVersion: "2.4"
+metadata:
+  name: "helloworld1"
+type: application
+server:
+  customMiddleware:
+    - name: ui5-middleware-cfdestination
+      afterMiddleware: compression
+      configuration:
+        authenticationMethod: "none" # "none" || "route", default: "none"
+        allowServices: true # allows BTP services like SAP IoT to be used
+        debug: true
+        port: 1091
+        xsappJson: "xs-app.json"
+        destinations:
+          # check that the destination name (here: "backend") matches your router in xs-app.json
+          - name: "ES5"
+            url: https://sapes5.sapdevcenter.com
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
